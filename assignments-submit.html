@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Glyphicons Halflings';
+            src: url('fonts/glyphicons-halflings-regular.eot');
+            src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+            url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+            url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+            url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+        }
+    </style>
+</head>
+<body>
+<div class="body-wrapper">
+
+    <nav id="navbar" class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/book.png"><span>eStudy</span></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./">Grades<span class="sr-only">(current)</span></a></li>
+                <li><a href="../navbar-static-top/">Assignments</a></li>
+            </ul>
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    <div class="container body-container">
+        <div class="dashboard-back">
+            <a href="dashboard.html">
+                <h2>
+                    <span class="glyphicon glyphicon-arrow-left"></span>Back to the dashboard
+                </h2>
+            </a>
+        </div>
+        <div class="assignment-submit-container statistics">
+            <form class="form-group">
+                <h1 class="assignment-field">Kasutajaliidesed</h1>
+                <h4 class="assignment-subject">Homework #1 - User interface prototype</h4>
+                <textarea class="assignment-content form-control" rows="8"></textarea>
+                <button class="btn btn-primary">Submit</button>
+                <a href="dashboard.html"><button class="btn btn-secondary">Cancel</button></a>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-4">
+                <h2>Content</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Grades</li>
+                    <li>Assignments</li>
+                </ul>
+            </div>
+            <div class="footer-banner">
+                <h2><img src="img/book_bw.png">eStudy</h2>
+                <ul>
+                    <li>Study Road 420, London UK</li>
+                    <li><span class="glyphicon glyphicon-earphone"></span>4353462</li>
+                    <li><span class="glyphicon glyphicon-envelope"></span>info@estudy.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

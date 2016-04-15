@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/permissions.js"></script>
+    <script src="js/getusername.js"></script>
+</head>
+<body>
+<div class="body-wrapper">
+
+    <nav id="navbar" class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/book.png"><span>eStudy</span></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="grades.html">Grades<span class="sr-only">(current)</span></a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li onclick="logOut()"><a href="javascript:void(0)">Log out</a></li>
+            </ul>
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    <div class="container body-container">
+        <h2 class="dashboard-school">Kasutajaliidesed</h2>
+        <p class="dashboard-user">Joonas Lume</p>
+        <div class="dashboard-actions-container">
+            <div class="dashboard-actions clearfix">
+                <a href="grades.html">
+                    <div class="tab-grades">
+                        <img class="grade-icon" src="img/grades.png">
+                        <h2>Grades</h2>
+                    </div>
+                </a>
+                <a href="assignments.html">
+                    <div class="tab-assignments">
+                        <img class="assignments-icon" src="img/assignments.png">
+                        <h2>Assignments</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-4">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="grades.html">Grades</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-banner">
+                <h2><img src="img/book_bw.png">eStudy</h2>
+                <ul>
+                    <li>Study Road 420, London UK</li>
+                    <li><span class="glyphicon glyphicon-earphone"></span>4353462</li>
+                    <li><span class="glyphicon glyphicon-envelope"></span>info@estudy.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

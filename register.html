@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css.map">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/dao.js"></script>
+    <script src="js/validator.js"></script>
+</head>
+<body>
+
+<div class="body-wrapper">
+
+    <nav id="navbar" class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/book.png"><span>eStudy</span></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="grades.html">Grades<span class="sr-only">(current)</span></a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <div class="container body-container">
+        <div class="login-tab">
+            <img class="login-icon" src="img/book.png">
+            <form name="registerForm" class="form-group">
+                <div class="form-helpers">
+                    <h1>Register</h1>
+                    <p>Please enter your credentials.</p>
+                </div>
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" required>
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" required>
+                <label>Admin</label>
+                <input name="admin" type="checkbox">
+                <br>
+                <input value="Register" class="btn btn-primary form-control" onclick="register()">
+                <p class="login-or-register">Already have an account?</p>
+                <a href="login.html"><input type="button" value="Login" class="btn btn-primary form-control"></a>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-4">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="grades.html">Grades</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-banner">
+                <h2><img src="img/book_bw.png">eStudy</h2>
+                <ul>
+                    <li>Study Road 420, London UK</li>
+                    <li><span class="glyphicon glyphicon-earphone"></span>4353462</li>
+                    <li><span class="glyphicon glyphicon-envelope"></span>info@estudy.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+.navbar-right{
+    float: right;
+    padding-top: 11px;
+}
+
+.navbar-right li{
+    display: inline;
+    margin-left: 40px;
+    font-size: 21px;
+}
+
+.navbar-right li a, .navbar-brand{
+    color: white !important;
+}
+
+.navbar{
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00CD98 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 70px;
+}
+
+.login-tab{
+    max-width: 375px;
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 4px 4px 16px gray;
+    background: #00CD98; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border: 1px solid #01858A;
+}
+
+.login-tab .btn-primary{
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+    background-color: #019081;
+}
+
+body{
+    background-image: url("../img/background.png");
+}
+
+.login-icon{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.form-helpers{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar-brand img{
+    display: inline-block;
+    width: 46px;
+}
+
+.navbar-brand span{
+    font-size: 26px;
+    top: 3px;
+    left: 14px;
+    position: relative;
+}
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #F0F0F0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #AFAFAF;
+    position:absolute;
+    height: 225px;   /* Height of the footer */
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.footer ul li{
+    padding-top: 5px;
+}
+
+.footer ul li a{
+    color: #AFAFAF;
+}
+
+.footer ul li a:hover{
+    text-decoration: none;
+    color: #5C9893;
+}
+
+.footer-banner{
+    float: right;
+}
+
+.tab-grades, .tab-assignments{
+    max-width: 375px;
+    padding: 50px;
+    position: relative;
+    box-shadow: 4px 4px 16px gray;
+    background: #00CD98; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border: 1px solid #01858A;
+    float: left;
+}
+
+.assignments-icon, .grade-icon{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.tab-assignments h2, .tab-grades h2{
+    padding-top: 35px;
+    text-align: center;
+}
+
+.body-wrapper{
+    min-height:100%;
+    position:relative;
+}
+
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.body-wrapper {
+    padding-bottom: 225px;   /* Height of the footer */
+}
+
+.body-container{
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+
+.dashboard-actions{
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.dashboard-actions-container{
+    text-align: center;
+}
+
+.dashboard-school{
+    text-align: center;
+    font-size: 45px;
+}
+
+.dashboard-user{
+    text-align: center;
+    font-size: 30px;
+}
+
+.dashboard-user, .dashboard-school{
+    color: #B1AEAE;
+}
+
+.tab-assignments:hover, .tab-grades:hover{
+    opacity: .8;
+}
+
+.statistics{
+    background-color: rgba(255,255,255, 0.6);
+    padding: 50px;
+    color: #616161;
+}
+
+.grades-image, .assignments-image{
+    display: inline-block;
+    max-width: 80px;
+    margin-right: 25px;
+}
+
+.grades-table, .assignments-table{
+    margin-top: 40px;
+}
+
+.dashboard-back h2{
+    color: #01BCAE;
+    margin-bottom: 40px;
+    transition: ease-in;
+    transition-duration: .2s;
+}
+
+.btn-primary, .submit-button{
+    color: white;
+    background-color: #01BCAE;
+    border: 0;
+}
+
+.assignment-content{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.assignment-subject{
+    color: #9E9C9C;
+}
+
+.login-or-register{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.footer-banner span{
+    margin-right: 5px;
+}
+
+.dashboard-back span{
+    margin-right: 10px;
+}
+
+.navbar, .navbar-brand{
+    height: auto;
+}
+
+.dashboard-back a:hover{
+    text-decoration: none;
+}
+
+.dashboard-back:hover h2{
+    color: #1BEAC9;
+}
+
+.footer-banner img{
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.newAssignment{
+    color: #01BCAE;
+}
+
+.newAssignment:hover{
+    text-decoration: none;
+    color: #1BEAC9;
+}
+
+.editForm-container, #assignment-submit-container, .assignments-container{
+    background-color: white;
+    padding: 50px;
+}
+
+.button-group{
+    margin-top: 30px;
+}
+
+li.active a{
+    background-color: #01C8AF !important;
+}
+
+.navbar-right li a:hover{
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}

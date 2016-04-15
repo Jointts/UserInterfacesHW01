@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/assignments.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+</head>
+<body>
+<div class="body-wrapper">
+
+    <nav id="navbar" class="navbar navbar-default">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/book.png"><span>eStudy</span></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="grades.html">Grades<span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="assignments.html">Assignments</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li onclick="logOut()"><a href="javascript:void(0)">Log out</a></li>
+            </ul>
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    <div class="container body-container">
+        <div class="dashboard-back">
+            <a href="dashboard.html">
+                <h2>
+                    <span class="glyphicon glyphicon-arrow-left"></span>Back to the dashboard
+                </h2>
+            </a>
+        </div>
+        <div class="assignments-container statistics">
+            <h2><img class="assignments-image" src="img/assignments.png">Assignments</h2>
+            <table class="table table-striped assignments-table">
+                <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                </tr>
+                </thead>
+                <tbody class="assignments"></tbody>
+            </table>
+            <a href="#assignment-submit-container" class="newAssignment"><span class="glyphicon glyphicon-plus"></span> Add assignment</a>
+        </div>
+    </div>
+
+    <div id="editForm-container" class="container editForm-container mfp-hide">
+        <div class="editForm"></div>
+    </div>
+
+    <div id="assignment-submit-container" class="container mfp-hide">
+        <h1 class="assignment-field">Kasutajaliidesed</h1>
+        <form name='assignmentForm' class='form-group'>
+            <label>Subject</label>
+            <input type='text' name='subject' class='form-control' required>
+            <label>Description</label>
+            <textarea type='text' name='assigned' rows="6" class='form-control' required></textarea>
+            <label>Deadline</label>
+            <input data-provide="datepicker" name='deadline' class='form-control' required>
+            <div class="button-group">
+                <button class='btn btn-primary' onclick='registerAssignment()'>Submit</button>
+                <button onclick="closeNewAssignmentForm()" class="btn btn-default">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-4">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="grades.html">Grades</a></li>
+                    <li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-banner">
+                <h2><img src="img/book_bw.png">eStudy</h2>
+                <ul>
+                    <li>Study Road 420, London UK</li>
+                    <li><span class="glyphicon glyphicon-earphone"></span>4353462</li>
+                    <li><span class="glyphicon glyphicon-envelope"></span>info@estudy.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
